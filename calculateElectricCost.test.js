@@ -18,6 +18,6 @@ describe('calculateElectricCost', () => {
         expect(() => calculateElectricCost(-10)).toThrow();
         expect(() => calculateElectricCost([1,2,3])).toThrow();
         expect(() => calculateElectricCost({name:'khoi'})).toThrow();
-        // expect(() => calculateElectricCost('')).toThrow();
+        expect(() => calculateElectricCost('')).toThrow();
      })
 })
