@@ -38,6 +38,6 @@ describe('calculate Electric Cost Using Parameterized: ', () => {
       //n  //expected
     ])('Amount of kwh: %f - Cost: %f', (kwh, expected) => {
       expect(calculateElectricCost(kwh)).toEqual(expected);
-            //actual                  ||      //expected
+            //actual                  |||      //expected
     });
 });
