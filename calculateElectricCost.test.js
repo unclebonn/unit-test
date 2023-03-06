@@ -1,7 +1,7 @@
 const calculateElectricCost = require('./calculateElectricCost');
 
 describe('calculateElectricCost', () => {
-    test('with valid argument', () => {
+    it('with valid argument', () => {
         expect(calculateElectricCost(50)).toBeCloseTo(83.9);
         expect(calculateElectricCost(100)).toBeCloseTo(170.6);
         expect(calculateElectricCost(200)).toBeCloseTo(372);
@@ -11,7 +11,7 @@ describe('calculateElectricCost', () => {
         expect(calculateElectricCost(500)).toBeCloseTo(1201.7);
     })
 
-    test('with unvalid argument', () => { 
+    it('with unvalid argument', () => { 
         expect(() => calculateElectricCost('a')).toThrow();
         expect(() => calculateElectricCost(null)).toThrow();
         expect(() => calculateElectricCost(undefined)).toThrow();
